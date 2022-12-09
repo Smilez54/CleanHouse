@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- contact section start -->
+<section class="contact section-padding" id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="sub-title">have any question ?</h2>
+        </div>
+        <div class="grid contact-grid">
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p>14, Jacob Street Fadeyi, lagos</p>
+                </div>
+
+
+                <div class="contact-info-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>+234-81024036..</p>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>ogundeji105@gmail.com</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div class="input-box">
+                        <input type="text" placeholder="Name" class="input-control" name="name" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Email" class="input-control" name="email" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Phone" class="input-control" name="phone" required>
+                    </div>
+                    <div class="input-box">
+                        <textarea placeholder="Message" class="input-control" name="message"></textarea>
+                    </div>
+                    <div class="btn-wrap">
+                        <button type="submit" class="btn"> Send Message </button>
+                    </div>
+                </form>                
+            </div>
+            <div class="image-input">
+                    <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input type="file" name="image/*" id="upload"><br>
+                <input type="submit" value="submit">
+            </form>
+                </div>
+        </div>
+    </div>
+</section>
+<!-- contact section ends -->
+
+<!-- image form -->
+
+
+
+<!-- image form ends -->
+{% endblock %}

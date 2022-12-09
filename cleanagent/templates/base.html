@@ -1,0 +1,65 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kitan </title>
+    <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap-4.6.2-dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/8ff1635e34.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="header js-header">
+        <div class="container">
+            <div class="logo"><a href="#"> Kitan <span>Cleaning Service</span></a></div>
+            <button type="button" class="nav-toggler js-nav-toggler">
+                <span></span>
+            </button>
+            <nav class="nav js-nav">
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'pricing' %}">Pricing</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header ends -->
+
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="container">
+            <h3>follow us</h3>
+            <div class="social-links">
+                <a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright">copyright@david-ogundeji</p>
+        </div>
+    </div>
+    <!-- footer ends -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'bootstrap-4.6.2-dist/js/bootstrap.js' %}"></script>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

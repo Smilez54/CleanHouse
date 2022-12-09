@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- page wrapper start -->
+    <div class="page-wrapper">
+        <!-- home section start -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="grid">
+                <div class="home-text">
+                    <h1>need cleaning services ?</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam cupiditate fugit nobis
+                        officia voluptate nostrum!</p>
+                    <div class="btn-wrap">
+                        <a href="#about" class="btn">Know More</a>
+                    </div>
+                </div>
+                <div class="home-img">
+                    <div class="circle-wrap">
+                        <div class="circle"></div>
+                    </div>
+                    <img src="{% static 'images/cleaner-removebg-preview.png' %}" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home section ends -->
+
+        <!-- about section starts here -->
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="grid">
+                    <div class="about-img">
+                        <div class="img-box">
+                            <img src="{% static 'images/cleaner2-removebg-preview.png' %}" alt="img">
+                            <div class="box box-1">
+                                <span>2.5k</span>
+                                <p>satisfied customers</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="about-text">
+                        <div class="section-title">
+                            <span class="title">about us</span>
+                            <h2 class="sub-title">we're cleaning since 2010</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, et. Ab quis et velit dolorum
+                            quidem! Sint soluta ipsa explicabo.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti dolore eaque
+                            similique rerum nesciunt dolorum delectus placeat nostrum molestias?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section ends here -->
+
+       
+
+        <!-- team section starts -->
+        <section class="team section-padding" id="team">
+            <div class="container">
+                <div class="section-title">
+                    <span class="title">team</span>
+                    <h2 class="sub-title">meet our team</h2>
+                </div>
+                <div class="grid">
+                    <!-- team item start -->
+                    <div class="team-item">
+                        <div class="img-box teams">
+                            <img src="{% static 'images/cleaner_team_2-removebg-preview.png' %}" alt="">
+                        </div>
+                        <div class="detail">
+                            <h3>testimony aire</h3>
+                            <p>team leader</p>
+                        </div>
+                    </div>
+                    <!-- team item end -->
+                    <!-- team item start -->
+                    <div class="team-item">
+                        <div class="img-box teams">
+                            <img src="{% static 'images/cleaner_team_2-removebg-preview.png' %}" alt="">
+                        </div>
+                        <div class="detail">
+                            <h3>leach bate</h3>
+                            <p>office cleaner</p>
+                        </div>
+                    </div>
+                    <!-- team item end -->
+                    <!-- team item start -->
+                    <div class="team-item">
+                        <div class="img-box teams">
+                            <img src="{% static 'images/team_cleaner_3-removebg-preview.png' %}" alt="">
+                        </div>
+                        <div class="detail">
+                            <h3>bush john & Bate Kate</h3>
+                            <p>home cleaner</p>
+                        </div>
+                    </div>
+                    <!-- team item end -->
+                </div>
+            </div>
+        </section>
+        <!-- team section ends -->
+
+
+    </div>
+    <!-- page wrapper end -->
+
+{% endblock %}
